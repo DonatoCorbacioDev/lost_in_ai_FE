@@ -10,11 +10,9 @@ export function generateSessionID() {
 }
 
 export function formatTimestap(timestamp?: string) {
-  if (!timestamp) return null
-  return new Date(timestamp).toLocaleTimeString('it-IT', { 
-    hour: '2-digit', 
-    minute: '2-digit' 
-  })
+  if (!timestamp) return null;
+  return new Date(timestamp).toLocaleTimeString("it-IT", {
+    hour: "2-digit",
+    minute: "2-digit",
+  });
 }
-
-
